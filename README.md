@@ -44,3 +44,24 @@ Example:
 ```
 
 This will output the most active cookie(s) for December 9th, 2018, based on the data in `cookie_log.csv`.
+
+### Exercise test suite
+```bash
+# Create a virtual environment (if not already created)
+python3 -m venv venv
+
+# Activate the virtual environment (for Unix/MacOS)
+source venv/bin/activate
+
+# Activate the virtual environment (for Windows)
+venv\Scripts\activate.bat
+
+# Install the required packages
+pip install -r requirements.txt
+
+# Run unit tests
+pytest
+
+# Deactivate virtual environment
+deactivate
+```

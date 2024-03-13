@@ -1,6 +1,6 @@
 import pytest
 from datetime import datetime
-from most_active_cookie import CookieLogProcessor, validate_date, parse_arguments
+from most_active_cookie_lib import CookieLogProcessor, validate_date, parse_arguments
 import os
 
 @pytest.fixture

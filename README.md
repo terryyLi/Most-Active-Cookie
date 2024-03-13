@@ -31,8 +31,23 @@ chmod +x most_active_cookie
 ```
 (optinal) Install the required Python packages to run tests:
 ```bash
+# Create a virtual environment (if not already created)
+python3 -m venv venv
+
+# Activate the virtual environment (for Unix/MacOS)
+source venv/bin/activate
+
+# Activate the virtual environment (for Windows)
+venv\Scripts\activate.bat
+
+# Install the required packages
 pip install -r requirements.txt
+
+# Run unit tests
 pytest
+
+# Deactivate virtual environment
+deactivate
 ```
 
 ### Usage

@@ -19,7 +19,6 @@ First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/most-active-cookie.git
-cd most-active-cookie
 ```
 
 

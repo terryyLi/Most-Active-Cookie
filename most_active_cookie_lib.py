@@ -62,7 +62,7 @@ def parse_arguments():
     """Parses command-line arguments."""
     parser = argparse.ArgumentParser(description='Find the most active cookie in a log file for a specific date.')
     parser.add_argument('file', type=str, help='The log file containing cookie data.')
-    parser.add_argument('-d', '--date', required=True, type=str, help=f'Find the most active cookie for this date ({DATE_ONLY_FORMAT}).')
+    parser.add_argument('-d', '--date', required=True, type=str, help=f'Find the most active cookie for this date (\'YYYY-MM-DD\').')
     return parser.parse_args()
 
 def validate_date(date_str):

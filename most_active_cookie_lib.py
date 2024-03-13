@@ -43,7 +43,7 @@ class CookieLogProcessor:
                         break
         except FileNotFoundError as e:
             logging.error(f"The file {self.file_path} was not found.")
-            raise e
+            exit(1)
 
 
     def find_most_active_cookie(self):
@@ -70,8 +70,8 @@ def validate_date(date_str):
     try:
         return datetime.strptime(date_str, DATE_ONLY_FORMAT).date()
     except ValueError as e:
-        logging.error("Error: Date must be in YYYY-MM-DD format.")
-        raise e
+        logging.error("Error: Date must be in valid YYYY-MM-DD format.")
+        exit(1)
 
 def main():
     """Main function to execute script logic."""

@@ -4,7 +4,7 @@ The `most_active_cookie` script is a command-line tool designed to find the most
 
 ## Description
 
-Given a cookie log file in CSV format, this script will output the cookie(s) that appeared the most on a particular day.
+Given a cookie log file in CSV format, this script will output the cookie(s) that appeared the most on a particular day. Unit tests are automated in git action.
 
 ## Getting Started
 
@@ -21,33 +21,12 @@ First, clone the repository to your local machine:
 git clone https://github.com/yourusername/most-active-cookie.git
 ```
 
-
 ### Setup
 
-Make the script executable:
+Make the script executable if it's not:
 
 ```bash
 chmod +x most_active_cookie
-```
-(optinal) Install the required Python packages to run tests:
-```bash
-# Create a virtual environment (if not already created)
-python3 -m venv venv
-
-# Activate the virtual environment (for Unix/MacOS)
-source venv/bin/activate
-
-# Activate the virtual environment (for Windows)
-venv\Scripts\activate.bat
-
-# Install the required packages
-pip install -r requirements.txt
-
-# Run unit tests
-pytest
-
-# Deactivate virtual environment
-deactivate
 ```
 
 ### Usage
@@ -57,7 +36,7 @@ To run the `most_active_cookie` script, use the following command:
 ./most_active_cookie <path_to_cookie_log.csv> -d <YYYY-MM-DD>
 ```
 
-Here, <path_to_cookie_log.csv> should be replaced with the path to your cookie log file, and <YYYY-MM-DD> should be replaced with the date for which you want to find the most active cookie.
+Here, `<path_to_cookie_log.csv>` should be replaced with the path to your cookie log file, and <YYYY-MM-DD> should be replaced with the date for which you want to find the most active cookie.
 
 Example:
 ```bash
